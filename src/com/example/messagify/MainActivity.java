@@ -21,14 +21,6 @@ import weka.core.converters.ArffLoader.ArffReader;
 import weka.filters.unsupervised.attribute.StringToWordVector;
 
 public class MainActivity extends Activity {
-
-	/**/Instances trainData;
-	StringToWordVector filter;
-	FilteredClassifier classifier;
-	
-	//2nd class ke
-	Instances instances;
-	String text="get free prize";
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
