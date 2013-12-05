@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:padding="6dip" >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="6dip"
+        android:contentDescription="TODO"
+        android:minHeight="100dip"
+        android:minWidth="50dip"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/previewMessage"
+        android:layout_width="0dip"
+        android:layout_height="26dip"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_toLeftOf="@+id/date"
+        android:ellipsize="marquee"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="Message Preview"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/NoMessages"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/contactName"
+        android:layout_alignBottom="@+id/contactName"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dip"
+        android:layout_toRightOf="@+id/contactName"
+        android:ellipsize="marquee"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="101"
+        android:textSize="16sp"
+        android:textColor="@android:color/darker_gray"/>
+
+    <TextView
+        android:id="@+id/contactName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/previewMessage"
+        android:layout_alignParentTop="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_toRightOf="@id/icon"
+        android:gravity="center_vertical"
+        android:text="Sender Name"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="50dip"
+        android:layout_height="26dip"
+        android:layout_alignBaseline="@+id/previewMessage"
+        android:layout_alignBottom="@+id/previewMessage"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dip"
+        android:ellipsize="marquee"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="23:12 AM"
+        android:textSize="12sp" />
+
+</RelativeLayout> 
